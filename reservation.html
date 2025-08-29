@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Tourisme Tchad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bodyR">
+    <header>
+        <h1>Réservez votre visite</h1>
+        <nav>
+          <a href="Acceuil.html">Accueil</a>
+          <a href="decouvrir.html">À découvrir</a>
+          <a href="experiences.html">Experiences</a>
+          <a href="reservation.html">Réservation</a>
+          <a href="temoignages.html">Témoignages et avis</a>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <form action="#" method="post">
+            <label for="nom">Nom complet :</label>
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+
+            <label for="date">Date de visite :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="personnes">Nombre de personnes :</label>
+            <input type="range" id="personnes" name="personnes" min="1" max="10" value="2" oninput="this.nextElementSibling.value = this.value">
+            <output>2</output>
+
+            <label for="message">Message:</label>
+            <input type="text">
+
+            <label for="tel">Numéro de téléphone :</label>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]{8,}" placeholder="Ex: 66112233" required>
+
+            <button type="submit">Réserver</button>
+        </form>
+    </main>
+
+    <footer style="text-align:center;">
+        &copy; 2025 Tourisme Tchad
+    </footer>
+</body>
+</html>
